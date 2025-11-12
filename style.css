@@ -1,0 +1,21 @@
+:root{
+  --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#2dd4bf; --glass: rgba(255,255,255,0.04);
+}
+*{box-sizing:border-box;font-family:Inter,Segoe UI,system-ui,Arial,sans-serif}
+html,body{height:100%;margin:0;background:linear-gradient(180deg,#071025 0%,#071a2b 100%);color:#e6eef6}
+main.card{max-width:720px;margin:48px auto;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:28px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.7);border:1px solid var(--glass)}
+header h1{margin:0 0 6px;font-size:1.4rem}
+.lead{color:var(--muted);margin-top:0}
+.controls{margin:18px 0}
+label{display:block;color:var(--muted);font-size:0.95rem}
+input{width:100%;padding:10px 12px;margin-top:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+.row{display:flex;gap:10px;margin-top:10px}
+.btn{padding:10px 14px;border-radius:8px;border:0;background:transparent;color:var(--accent);cursor:pointer;border:1px solid rgba(255,255,255,0.04)}
+.btn.primary{background:linear-gradient(90deg,var(--accent),#60a5fa);color:#042028;border:none;box-shadow:0 6px 18px rgba(45,212,191,0.12)}
+.muted{color:var(--muted)}
+h2{margin-top:20px}
+.list{list-style:none;padding:0;margin:12px 0}
+.list li{display:flex;justify-content:space-between;padding:8px 10px;border-radius:8px;background:rgba(255,255,255,0.02);margin-bottom:8px;font-family:monospace}
+footer{margin-top:18px;color:var(--muted);font-size:0.85rem}
+
+@media (max-width:600px){main.card{margin:18px;padding:16px}}

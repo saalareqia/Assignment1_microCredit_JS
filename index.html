@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kiwi Sports — Multi Auth Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <header>
+      <h1>Kiwi Sports — Multi-Authentication</h1>
+      <p class="lead">Generate one-time passcodes (OTP) valid for 5 minutes.</p>
+    </header>
+
+    <section class="controls">
+      <label>Passcode (numbers only)
+        <input id="codeInput" inputmode="numeric" pattern="[0-9]*" placeholder="e.g. 123456">
+      </label>
+      <div class="row">
+        <button id="generateBtn" class="btn primary">Generate / Reset (5 min)</button>
+        <button id="checkBtn" class="btn">Check Validity</button>
+      </div>
+      <p id="result" class="muted"></p>
+    </section>
+
+    <section>
+      <h2>Active Passcodes</h2>
+      <ul id="passcodeList" class="list"></ul>
+    </section>
+
+    <footer>
+      <small>This demo stores passcodes in memory only. Refreshing will clear them.</small>
+    </footer>
+  </main>
+
+  <script src="multiAuth.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
